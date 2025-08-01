@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #6a11cb;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2575fc;
+}
+
+.toggle-text {
+  margin-top: 15px;
+  color: #444;
+}
+
+.toggle-text a {
+  color: #6a11cb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#toggle-mode {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  background: linear-gradient(to right, #232526, #414345);
+}
+
+body.dark-mode .container {
+  background: #2d2d2d;
+  color: #fff;
+}
+
+body.dark-mode input {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+body.dark-mode button {
+  background: #444;
+  color: white;
+}
+
+body.dark-mode button:hover {
+  background: #666;
+}
+
+body.dark-mode .toggle-text {
+  color: #ccc;
+}
